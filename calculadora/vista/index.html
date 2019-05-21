@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+	<script type="text/javascript" src="../funciones/funcion.js"></script>
+</head>
+
+<body class="bg" onload="saludo('Proyecto Calculadora UPS 2019')">
+
+	<div id="colores" class="main">
+		<form>
+			<input class="textview" name="textview" id="textview" />
+		</form>
+
+		<table>
+			<tr>
+			<td><input class="button" type="button" value="←" onclick="regresar()" /></td>
+			<td><input class="button" type="button" value="C" onclick="limpiar('C')" /></td>
+			<td><input class="button" type="button" value="CE" onclick="limpiar('CE')" /></td>
+			<td><input class="button" type="button" value="±" onclick="masmenos()" /></td>
+			<td><input class="button" type="button" value="√" onclick="raiz()" /></td>
+			</tr>
+
+			<tr> 
+			<td><input class="button" type="button" value="7" onclick="insertar(7)" /></td>
+			<td><input class="button" type="button" value="8" onclick="insertar(8)" /></td>
+			<td><input class="button" type="button" value="9" onclick="insertar(9)" /></td>
+			<td><input class="button" type="button" value="÷" onclick="insertar('/')" /></td>
+			<td><input class="button" type="button" value="%" onclick="insertar('%')" /></td>
+			</tr>
+
+			<tr>
+			<td><input class="button" type="button" value="4" onclick="insertar(4)" /></td>
+			<td><input class="button" type="button" value="5" onclick="insertar(5)" /></td>
+			<td><input class="button" type="button" value="6" onclick="insertar(6)" /></td>
+			<td><input class="button" type="button" value="x" onclick="insertar('*')" /></td>
+			<td><input class="button" type="button" value="1⁄x" onclick="div()" /></td>
+			</tr>
+
+			<tr>
+			<td><input class="button" type="button" value="1" onclick="insertar(1)" /></td>
+			<td><input class="button" type="button" value="2" onclick="insertar(2)" /></td>
+			<td><input class="button" type="button" value="3" onclick="insertar(3)" /></td>
+			<td><input class="button" type="button" value="-" onclick="insertar('-')" /></td>
+			<td rowspan=5><input class="button" style="height: 107px" type="button" value="=" onclick="igual('=')" /></td>
+			</tr>
+
+			<tr>
+			<td colspan=2><input class="button" style="width:107px" type="button" value="0" onclick="insertar(0)" /></td>
+			<td><input class="button" type="button" value="," onclick="insertar('.')" /></td>
+			<td><input class="button" type="button" value="+" onclick="insertar('+')" /></td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
